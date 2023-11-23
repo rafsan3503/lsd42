@@ -51,7 +51,8 @@ const customArt = `[[gb;teal;black]    __   _____ ____   __ __ ___   ____  _____
  / /______/ / /_/ /__  __/  __// /_/ / /_/ /\\__, / 
 /_____/____/_____/  /_/ /____/ \\____/\\____//____/  
                 
-Welcome to LSD42069, a revolutionary blockchain cryptography token revolutionizing the realm of digital assets and scientific exploration. Envision the colossal force of the entire stock market, now condensed into a sleek, high-powered crypto token on Ethereum.\n\n欢迎来到LSD42069，这是一种革命性的区块链加密货币代币，\n正在彻底改变数字资产和科学探索的领域。想象一下，整个股票市场的巨大力量现在被压缩成了时尚、\n高效能的加密代币。这一突破得益于顶尖数学家和科学研究人员的集体智慧。\n通过与速度和效率俱佳的Ethereum区块链的整合，LSD42069站在了金融创新的前沿。\n这种整合不仅标志着金融历史上的一个转折点，而且还充分释放\n了区块链技术的潜力，利用Ethereum的快速交易能力。
+Welcome to LSD42069, a revolutionary blockchain cryptography token revolutionizing the realm of digital assets and scientific exploration. Envision the colossal force of the entire stock market, now condensed into a sleek, high-powered crypto token on Ethereum.
+0x3e76990ef2b7b3c96a0852877364bdaba9ad3e70\n\n欢迎来到LSD42069，这是一种革命性的区块链加密货币代币，\n正在彻底改变数字资产和科学探索的领域。想象一下，整个股票市场的巨大力量现在被压缩成了时尚、\n高效能的加密代币。这一突破得益于顶尖数学家和科学研究人员的集体智慧。\n通过与速度和效率俱佳的Ethereum区块链的整合，LSD42069站在了金融创新的前沿。\n这种整合不仅标志着金融历史上的一个转折点，而且还充分释放\n了区块链技术的潜力，利用Ethereum的快速交易能力。
 \nType 'help' to learn more.]`;
 
 $(document).ready(function () {
@@ -66,7 +67,7 @@ $(document).ready(function () {
         term.echo("\nAvailable commands: hello, help, address, manifesto\n");
       } else if (command === "address") {
         term.echo(
-          "\nCoin Address: 0x00000000000000000000000000\n"
+          "\nCoin Address: 0x3e76990ef2b7b3c96a0852877364bdaba9ad3e70\n"
         );
       } else if (command === "manifesto") {
         term.echo(
