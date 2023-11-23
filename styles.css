@@ -1,0 +1,154 @@
+body {
+  background-image: url("images/background.jpg"); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  width: 30vw;
+  top: 50%;
+  left: 67%;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: grey;
+  color: #fff;
+}
+
+.terminal {
+  color: green;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.left-gallery,
+.right-gallery {
+  width: 50%; /* Adjust the width as needed */
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+}
+
+.video-container {
+  position: fixed; /* Fix the position of the video on the page */
+  top: 80%; /* Center the video vertically */
+  left: 50%; /* Center the video horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the size of the video */
+  z-index: 0; /* Place it below the image gallery in the visual stack */
+}
+
+.main {
+  position: fixed; /* Fix the position of the video on the page */
+  top: 70%; /* Center the video vertically */
+  left: 50%; /* Center the video horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the size of the video */
+  z-index: 0; /* Place it below the image gallery in the visual stack */
+}
+
+.video-container video {
+  width: 480px; /* Set the width of the video */
+  height: auto; /* Maintain the aspect ratio of the video */
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0; /* Change the 'left' property to 'right' to right-align the navbar */
+  width: 80%; /* Adjusted width to make room for content */
+  text-align: right; /* Align the text to the right within the navbar */
+}
+
+/* Navigation links */
+.navbar a {
+  float: right; /* Change 'float' property to 'right' to right-align the links */
+  display: block;
+  color: #003399; /* Windows Vista blue text color */
+  text-align: center;
+  padding: 10px 20px; /* Adjusted padding */
+  margin: 1em;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Windows Vista font-family */
+  margin-left: 2px; /* Change 'margin-right' to 'margin-left' for proper spacing */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px; /* Rounded corners for buttons */
+  background: linear-gradient(
+    to bottom,
+    #b6d9f9,
+    #7da5d8
+  ); /* Gradient background */
+}
+
+/* The last link doesn't need a left border or margin */
+.navbar a:last-child {
+  border-left: none; /* Change 'border-right' to 'border-left' */
+  margin-left: 0; /* Change 'margin-right' to 'margin-left' */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #c5d5eb; /* Lighter blue background on hover */
+  color: #003399; /* Maintain blue text color */
+  box-shadow: 0 0 8px rgba(0, 51, 153, 0.6); /* Glowy effect on hover */
+}
+
+/* Ensure the navbar text isn't too large */
+.navbar a {
+  font-size: 14px; /* Slightly smaller font size */
+}
+
+/* Custom icons for the navbar links */
+.navbar a img {
+  vertical-align: middle; /* Align the icons vertically with text */
+  margin-left: 5px; /* Add a small margin between the icon and text */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11; /* Make sure it's on top of everything */
+}
+
+/* CSS for the confirmation screen */
+.confirmation-screen {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* CSS for the "Enter" button */
+.enter-button {
+  background-color: #007bff; /* Blue color, you can change this */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
